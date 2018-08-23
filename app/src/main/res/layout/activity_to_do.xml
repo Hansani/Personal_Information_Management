@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_gravity="center"
+        android:text="@string/add_to_do"
+        android:textColor="@android:color/background_dark"
+        android:textAlignment="center"
+        android:textSize="30sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center_vertical"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/txt_view_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="50dp"
+            android:text="@string/day"
+            android:textColor="@android:color/background_dark"
+            android:layout_weight="0.14"/>
+
+        <Spinner
+            android:id="@+id/spinner_day_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="50dp"
+            android:layout_weight="0.86"
+            android:entries="@array/spinner_day"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/txt_view_time_from"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/time_from_text_view"
+            android:textColor="@android:color/background_dark"
+            android:layout_weight="0.14" />
+
+        <Spinner
+            android:id="@+id/spinner_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_weight="0.86"
+            android:entries="@array/spinner_time"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/txt_view_time_to"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/time_from_text_view"
+            android:textColor="@android:color/background_dark"
+            android:layout_weight="0.14" />
+
+        <Spinner
+            android:id="@+id/spinner_time_to"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_weight="0.86"
+            android:entries="@array/spinner_time"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/txt_view_venue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/venue_text"
+            android:textColor="@android:color/background_dark"
+            android:layout_weight="0.14" />
+
+        <EditText
+            android:id="@+id/venue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_weight="0.86"
+            android:textColor="@android:color/background_dark"/>
+    </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/btn_add_to_do"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:onClick="onClick"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center"
+        android:text="@string/update_btn"
+        android:textColor="@android:color/background_dark" />
+
+</LinearLayout>
